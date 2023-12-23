@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f18e16f100c14a58bedd52ba9040c015" Name="Diagram1" ZoomLevel="73">
+        <EntityTypeShape EntityType="HakatonVEBModel.Access" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="HakatonVEBModel.ButtonsOfQuestions" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HakatonVEBModel.Questions" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="HakatonVEBModel.Role" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HakatonVEBModel.Survey" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HakatonVEBModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HakatonVEBModel.Answers" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="HakatonVEBModel.FK_Access_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="HakatonVEBModel.FK_Answers_Access" ManuallyRouted="false" />
+        <AssociationConnector Association="HakatonVEBModel.FK_Questions_ButtonsOfQuestions" ManuallyRouted="false" />
+        <AssociationConnector Association="HakatonVEBModel.FK_Answers_Questions" ManuallyRouted="false" />
+        <AssociationConnector Association="HakatonVEBModel.FK_Questions_Survey" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,34 @@
+﻿@model  List<Hakaton.Models.Entities.Survey>
+@{
+    ViewBag.Title = "EnterScreen";
+}
+<h2>формы.газпром.ру</h2>
+
+@Html.ActionLink("Добавить Опрос", "QueryCreate", "Hakaton", new { @class = "btn btn-defaulf" })
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th class="text-center">Номер опроса</th>
+            <th class="text-center">Название опроса</th>
+            <th class="text-center">Результаты</th>
+            <th class="text-center">Редактировать</th>
+            <th class="text-center">Удалить</th>
+
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var Query in Model)
+{
+    <tr>
+        <td class="text-center">@Query.NumberOfSurvey</td>
+        <td class="text-center">@Query.Name</td>
+        <td class="text-center">@Html.ActionLink("подробнее", "QueryResult", "Hakaton", new {controller = "Hakaton", NumberOfSurvey = Query.NumberOfSurvey })</td>
+        <td class="text-center">@Html.ActionLink("подробнее", "QuestionCreate", "Hakaton", new { controller = "Hakaton", NewQuestion = Query.NumberOfSurvey }) </td>
+        <td class="text-center">@Html.ActionLink("Удалить", "QueryDelete", "Hakaton", new { controller = "Hakaton", NumberOfSurvey = Query.NumberOfSurvey }) </td>
+    </tr>
+}
+    </tbody>
+</table>
+
+
+

@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>формы.газпром.ру</h2>
+<input type="hidden" value="@ViewBag.BookId" name="BookId" />
+<table>
+    <tr>
+        <td><p>Введите почту</p></td>
+        <td><input type="text" name="Почта" /> </td>
+    </tr>
+    <tr>
+        <td><p>Введите пароль</p></td>
+        <td><input type="text" name="Пароль" /> </td>
+    </tr>
+    <tr>
+        <td>@Html.ActionLink("Войти", "EnterScreen", "Hakaton", new { @class = "btn btn-defaulf" })</td>
+       
+    </tr>
+</table>
